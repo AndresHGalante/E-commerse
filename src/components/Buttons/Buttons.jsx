@@ -1,15 +1,13 @@
-import styles from './Buttons.module.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Buttons() {
-    return (
-        <nav className={styles.nav}>
-            <ul className={styles.navLinks}>
-                <li><a href="/" className={styles.navLink}>Inicio</a></li>
-                <li><a href="/products" className={styles.navLink}>Productos</a></li>
-                <li><a href="/cart" className={styles.navLink}>Carrito</a></li>
-            </ul>
-        </nav>
-    )
+  return (
+    <div>
+      <Link to='/category/Chocolate'>Chocolate</Link>
+      <Link to='/category/Frutas'>Frutas</Link>
+    </div>
+  );
 }
 
-export default Buttons
+export default Buttons;

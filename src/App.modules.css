@@ -6,7 +6,6 @@
 
 .NavBar {
   display: flex;
-  justify-content: center;
   margin: 0;
   background-color: blue;
 }

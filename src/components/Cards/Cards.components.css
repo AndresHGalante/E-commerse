@@ -1,0 +1,37 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    text-align: center;
+    color: #000;
+}
+
+.card-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-description {
+    text-align: justify;
+    color: #000;
+}

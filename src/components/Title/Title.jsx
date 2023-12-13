@@ -1,11 +1,12 @@
 import react from 'react';
 import styles from './Title.module.css';
+import {Link} from 'react-router-dom'
 
 function Title (){
     return (
-       <div className={styles.logo}>
-            <h1 className={styles.title}>Bienvenido a mi pagina</h1>
-       </div>
+       <Link to="/" className={styles.logo}>
+            <h1>Bienvenido a mi pagina</h1>
+       </Link>
     );
 };
 

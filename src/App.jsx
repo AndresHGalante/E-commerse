@@ -1,24 +1,22 @@
-import { useState } from 'react'
 import './App.modules.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar.jsx'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
-import CartWidget from './components/CartWidget/CartWidget.jsx'
+import CardRender from './components/CardRender/CardRender.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <BrowserRouter>
       <div className='NavBar'>
-        < NavBar />
+        <NavBar />
       </div>
-      <div className='NavBar' id='Right'>
-        < CartWidget />
-      </div>
-      <div>
-      < ItemListContainer />
-      </div>
-    </>
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/category/:categoryId' element={<CardRender />} />
+        <Route path='/id/:id' element={<CardRender />} />
+        <Route path='*' element={<h1>404 Not Found</h1>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

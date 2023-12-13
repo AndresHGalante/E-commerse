@@ -1,12 +1,13 @@
 import React from 'react';
 import './ItemListContainer.components.css'
+import Cards from '../Cards/Cards';
 
-const ItemListContainer = ({ greeting }) => {
+function ItemListContainer() {
   return (
-    <div className="container">
-      <p className="message">{greeting}</p>
+    <div>
+      <Cards />
     </div>
-  );
-};
+  )
+}
 
 export default ItemListContainer;
