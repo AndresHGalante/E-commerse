@@ -1,0 +1,34 @@
+.itemListContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+    ;
+}
+
+.productItem {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #E36414
+}
+
+.productItem h3 {
+    margin-bottom: 10px;
+}
+
+.productItem img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.productItem p {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .itemListContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

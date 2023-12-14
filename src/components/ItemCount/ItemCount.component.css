@@ -1,0 +1,14 @@
+.boton {
+    padding: 10px 20px;
+    background-color: #9A031E;
+    color: #FB8B24;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+}
+
+.boton:active {
+    transform: scale(0.85);
+}
