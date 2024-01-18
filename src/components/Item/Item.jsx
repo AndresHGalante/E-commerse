@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom"
-
-const Item = ({ id, name, price, img }) => {
+const Item = ({name, price, img }) => {
     return (
         <div>
             <h3>{name}</h3>

@@ -1,0 +1,46 @@
+article {
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #E36414;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+p {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.botoncito {
+    padding: 10px 20px;
+    background-color: #9A031E;
+    color: #FB8B24;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+}
+
+.botoncito:active {
+    transform: scale(0.85);
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+.final {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+
+.texto {
+    font-family: 'Lemon', serif;
+    color: #FB8B24;
+}
+
+.button {
+    text-decoration: none;
+    color: #9A031E;
+    font-family: 'Lemon', serif;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.3);
+}

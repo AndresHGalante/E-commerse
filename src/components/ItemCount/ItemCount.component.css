@@ -1,4 +1,4 @@
-.boton {
+.botoncito {
     padding: 10px 20px;
     background-color: #9A031E;
     color: #FB8B24;
@@ -9,6 +9,6 @@
     text-decoration: none;
 }
 
-.boton:active {
+.botoncito:active {
     transform: scale(0.85);
 }
